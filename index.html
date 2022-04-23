@@ -5,13 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-        
         <title>Welcome to Paul's page</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -25,8 +23,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles.css" rel="stylesheet" />
+            <link href="styles.css" rel="stylesheet" />
         <style type="text/css">
+        .bot {
+            width:100%;
+            background-image: url(bg2.jpg) !important;
+            background-repeat: repeat;
+            background-position: center;
+            background: rgba(255, 255, 255, 1);
+            opacity1: 0.5;
+        }
+
+              /*
+             @media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}   */
+
+
              header img {
                  width: 100%;
                  height:auto
@@ -37,51 +52,172 @@
                 font-size: 80px;
                 text-align: center;
                 color: white;
+                text-align: center;
             }
+            
+            
+            .gradient-custom {
+  /* fallback for old browsers */
+  background: #f6d365;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to left, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, rgba(246, 211, 101, 0.5), rgba(253, 160, 133, 0.5))
+}
+        .responsive {
+  width: 100%;
+  height: auto;
+}
         </style>
+        <style>
+.paul {
+  position: relative;
+  width: 100%;
+}
+  /*
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+   .image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+ /*
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
+}  */
+     .paul:hover .image {
+  opacity: 0.3;
+}
+
+.paul:hover .middle {
+  opacity: 1;
+}
+/*
+.paul:hover .middle {
+  opacity: .3;
+  cursor:pointer;
+  transition-delay: 1s;
+}   */
+
+.text {
+  color: black;
+  font-size: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 5px solid white;
+  background-color: rgba(255, 153, 0, 1);
+  width: 600px;
+}
+
+.boda {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 25px;
+}
+   .hov {
+  /*width: 100px;
+  height: 100px; */
+  width: 300px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+   .hov:hover {
+  width: 500px;
+}
+
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 1em;
+    color:red;
+  }
+}
+h1.a {
+  text-align: center;
+  color:white
+}
+</style>
+
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-            <div class="container px-5" style="background: blue;">
-                <div class="titi" href="#page-top">Page for Sir Paul website </div>
-            </div>
+    <body class="body">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="height:100px; margin-bottom: 50px;">
+            <h3 style="color:white; text-align: center;">Caring for the Poor . . . Wisely - Proverbs 28:27
+  He who gives to the poor will never want, but he who shuts his eyes will have many curses. </h3>
         </nav>
-        <!-- Header-->
-        <header class="masthead text-center text-white">
-
-            <img src="Uderconstuction.png" alt="underconstruction" width="908" height="450" />
-           <!-- <div class="bg-circle-1 bg-circle"></div>
-            <div class="bg-circle-2 bg-circle"></div>
-            <div class="bg-circle-3 bg-circle"></div>
-            <div class="bg-circle-4 bg-circle"></div>-->
-        </header>
-        <!-- Content section 1-->
-        <section id="scroll">
+            <div class="container px-5">
+        <div class="container px-5 boda" style="background-color: brown; text-align: center; margin-top: 100px;">
+                <div class="titi" href="#page-top">Page for Sir <span style="color: rgba(255, 102, 0, 1); font-size: 1.5em"
+                >Paul </span>website </div>
+            </div>
+            </div>
 
 
+          <div class="paul">
+              <img src="Uderconstuction.png" alt="underconstruction" class="image responsive" border: 5px solid #ff00ff; width="908" height="450" />
+               <div class="middle">
+             <div class="overlay">
+             <div class="text">Hello Sir Paul</div>
+             </div>
+             </div>
+             </div>
 
-        </section>
-        <!-- Content section 2-->
-
-          <div class="container">
-  <h2>Simple Collapsible</h2>
-  <p>Click on the button to toggle between showing and hiding content.</p>
-  <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+<div class="container-fluid bot">
+  <p>Click on the button to read the content</p>
+  <button type="button" class="btn btn-primary hov" data-toggle="collapse" data-target="#demo">
+      <span style=" font-size: 2em;">Message for Paul</span></button>
   <div id="demo" class="collapse">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Please create youTube account and upload the charity videos on your mobile phone to it.
+    Paste the links on your website to be built.
+    Through this your charity organisation will be known world wide.
+     <img src="light.png" alt="Matthew 5:16" width="993" height="545" class="responsive" />
+     <br><br>
+     <img src="charity.png" alt="Charity" class="responsive" width="454" height="335" />
   </div>
-</div> 
-        
-        
-        
-        
-        
+</div>
+           
         <!-- Footer-->
-        <footer class="py-5 bg-black">
-            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Sir Paul Website 2022</p>LOVE</div>
+        <footer class="py-5 bg-black gradient-custom ">
+            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Sir Paul Website 2022</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
